@@ -17,9 +17,9 @@ export function Footer() {
           <h4 className="font-semibold mb-3">For Customers</h4>
           <ul className="space-y-2 text-sm text-neutral-600">
             <li><Link href="/orders" className="hover:text-brand-green">My Orders</Link></li>
-            <li><Link href="/help" className="hover:text-brand-green">Help & Support</Link></li>
-            <li><Link href="/legal/privacy" className="hover:text-brand-green">Privacy</Link></li>
-            <li><Link href="/legal/terms" className="hover:text-brand-green">Terms</Link></li>
+            <li><Link href="/support" className="hover:text-brand-green">Help &amp; Support</Link></li>
+            <li><Link href="/privacy-policy" className="hover:text-brand-green">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-brand-green">Terms &amp; Conditions</Link></li>
           </ul>
         </div>
         <div>
@@ -33,14 +33,20 @@ export function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-neutral-600">
-            <li>support@bunzo.zm</li>
-            <li>+260 211 BUNZO</li>
+            <li><a href="mailto:support@bunzo.zm" className="hover:text-brand-green">support@bunzo.zm</a></li>
+            <li><a href="tel:+260977000000" className="hover:text-brand-green">+260 977 000 000</a></li>
             <li>Lusaka · Mon–Sun, 24/7</li>
           </ul>
         </div>
       </div>
       <div className="text-center text-xs text-neutral-500 border-t border-neutral-200 py-5">
-        © 2026 Bunzo Commerce Zambia Ltd. — All rights reserved.
+        © 2026 Bunzo Technologies Limited — All rights reserved.
+        {' · '}
+        <Link href="/privacy-policy" className="hover:text-neutral-700 underline">Privacy</Link>
+        {' · '}
+        <Link href="/terms" className="hover:text-neutral-700 underline">Terms</Link>
+        {' · '}
+        <Link href="/support" className="hover:text-neutral-700 underline">Support</Link>
       </div>
     </footer>
   );
