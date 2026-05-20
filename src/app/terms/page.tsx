@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const EFFECTIVE_DATE = '1 May 2026';
 const COMPANY = 'Bunzo Technologies Limited';
-const EMAIL = 'legal@bunzo.zm';
+const EMAIL = 'support@bunzodelivery.com';
 
 export default function TermsPage() {
   return (
@@ -69,7 +69,7 @@ export default function TermsPage() {
 
       <Section title="6. Refunds & Returns">
         <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-700">
-          <li>If you receive a wrong, damaged or expired item, contact us within <strong>24 hours</strong> of delivery at <a href="mailto:support@bunzo.zm" className="text-brand-green underline">support@bunzo.zm</a> with your order ID and a photo.</li>
+          <li>If you receive a wrong, damaged or expired item, contact us within <strong>24 hours</strong> of delivery at <a href="mailto:support@bunzodelivery.com" className="text-brand-green underline">support@bunzodelivery.com</a> with your order ID and a photo.</li>
           <li>We will offer a replacement on the next available delivery or a full refund for the affected item(s).</li>
           <li>Refunds to Airtel Money or MTN MoMo are processed within <strong>3–5 business days</strong>. COD refunds are issued as credit to your Bunzo account or via bank transfer.</li>
           <li>Perishable items (fresh produce, dairy, meat) cannot be returned unless they are damaged or incorrect.</li>
@@ -143,7 +143,7 @@ export default function TermsPage() {
           <strong>{COMPANY}</strong><br />
           Lusaka, Zambia<br />
           Email: <a href={`mailto:${EMAIL}`} className="text-brand-green underline">{EMAIL}</a><br />
-          Support: <a href="mailto:support@bunzo.zm" className="text-brand-green underline">support@bunzo.zm</a>
+          Support: <a href="mailto:support@bunzodelivery.com" className="text-brand-green underline">support@bunzodelivery.com</a>
         </address>
       </Section>
 

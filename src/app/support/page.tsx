@@ -19,14 +19,8 @@ export default function SupportPage() {
         <ul className="space-y-3 text-sm">
           <li className="flex items-start gap-3">
             <span className="text-brand-green font-bold w-20 shrink-0">Email</span>
-            <a href="mailto:support@bunzo.zm" className="text-brand-green font-semibold underline">
-              support@bunzo.zm
-            </a>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-brand-green font-bold w-20 shrink-0">Phone</span>
-            <a href="tel:+260977000000" className="text-brand-green font-semibold underline">
-              +260 977 000 000
+            <a href="mailto:support@bunzodelivery.com" className="text-brand-green font-semibold underline">
+              support@bunzodelivery.com
             </a>
           </li>
           <li className="flex items-start gap-3">
@@ -59,8 +53,8 @@ export default function SupportPage() {
         <h2 className="text-xl font-bold mb-4">Order Issues</h2>
         <p className="text-sm text-neutral-700 mb-3">
           If you have a problem with a specific order, please email us at{' '}
-          <a href="mailto:support@bunzo.zm" className="text-brand-green font-semibold">
-            support@bunzo.zm
+          <a href="mailto:support@bunzodelivery.com" className="text-brand-green font-semibold">
+            support@bunzodelivery.com
           </a>{' '}
           with your order number and a brief description. We aim to respond within 2 hours.
         </p>
@@ -121,6 +115,6 @@ const faqs = [
   },
   {
     q: 'How do I delete my account?',
-    a: 'To request account deletion and erasure of your personal data, email us at support@bunzo.zm with the subject "Account Deletion Request". We will process it within 7 business days.'
+    a: 'To request account deletion and erasure of your personal data, email us at support@bunzodelivery.com with the subject "Account Deletion Request". We will process it within 7 business days.'
   }
 ];

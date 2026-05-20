@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const EFFECTIVE_DATE = '1 May 2026';
 const COMPANY = 'Bunzo Technologies Limited';
-const EMAIL = 'privacy@bunzo.zm';
+const EMAIL = 'support@bunzodelivery.com';
 
 export default function PrivacyPolicyPage() {
   return (
