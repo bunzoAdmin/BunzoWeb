@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { OrdersAPI } from '@/lib/api/endpoints';
 import { plainZMW } from '@/lib/currency';
@@ -15,7 +15,7 @@ const STATUS_LABEL: Record<Order['status'], string> = {
   cancelled: 'Cancelled'
 };
 
-export default function OrdersPage() {
+function OrdersList() {
   const search = useSearchParams();
   const placedId = search.get('placed');
   const [orders, setOrders] = useState<Order[] | null>(null);
@@ -25,9 +25,7 @@ export default function OrdersPage() {
   }, []);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 md:px-8 py-8">
-      <h1 className="text-2xl font-bold mb-6">My Orders</h1>
-
+    <>
       {placedId && (
         <div className="bg-brand-green-light border border-brand-green text-brand-green p-4 rounded-lg mb-6">
           🎉 Order <strong>{placedId}</strong> placed successfully! It will arrive in ~10 minutes.
@@ -76,6 +74,17 @@ export default function OrdersPage() {
           ))}
         </div>
       )}
+    </>
+  );
+}
+
+export default function OrdersPage() {
+  return (
+    <div className="max-w-3xl mx-auto px-4 md:px-8 py-8">
+      <h1 className="text-2xl font-bold mb-6">My Orders</h1>
+      <Suspense fallback={<p className="text-neutral-500">Loading orders…</p>}>
+        <OrdersList />
+      </Suspense>
     </div>
   );
 }
