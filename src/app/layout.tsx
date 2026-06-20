@@ -29,7 +29,10 @@ export const metadata: Metadata = {
     locale: 'en_ZM',
     siteName: 'Bunzo'
   },
-  robots: { index: true, follow: true }
+  robots: { index: true, follow: true },
+  other: {
+    'facebook-domain-verification': '4rf9a1v5ka53629hax6ndb8xkiiuef'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
