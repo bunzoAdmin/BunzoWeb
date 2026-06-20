@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { AppDownloadButtons } from '@/components/AppDownloadButtons';
 
 export function Footer() {
   return (
@@ -8,10 +9,13 @@ export function Footer() {
           <p className="font-semibold text-neutral-800">Bunzo Technologies Limited</p>
           <p className="text-xs mt-1">Lusaka, Zambia</p>
         </div>
-        <nav className="flex items-center gap-5">
-          <Link href="/support" className="hover:text-brand-green">Support</Link>
-          <Link href="/privacy-policy" className="hover:text-brand-green">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-brand-green">Terms</Link>
+        <nav className="flex flex-col items-center gap-4">
+          <AppDownloadButtons variant="light" />
+          <div className="flex items-center gap-5">
+            <Link href="/support" className="hover:text-brand-green">Support</Link>
+            <Link href="/privacy-policy" className="hover:text-brand-green">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-brand-green">Terms</Link>
+          </div>
         </nav>
         <div className="text-xs text-neutral-500 text-center md:text-right">
           <a href="mailto:support@bunzodelivery.com" className="hover:text-brand-green">

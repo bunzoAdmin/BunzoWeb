@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { AppDownloadButtons } from '@/components/AppDownloadButtons';
 
 export const metadata: Metadata = {
   title: 'Bunzo — Grocery Delivery App | Bunzo Technologies Limited',
@@ -31,9 +32,13 @@ export default function HomePage() {
                 <span className="absolute left-0 -bottom-1 w-full h-1 bg-brand-dark rounded-full" />
               </span>
             </h1>
-            <p className="text-neutral-800 text-base md:text-lg max-w-sm mb-8">
+            <p className="text-neutral-800 text-base md:text-lg max-w-sm mb-6">
               Fresh produce, daily essentials and household items — delivered to your doorstep across Lusaka.
             </p>
+            <div className="md:hidden mb-6">
+              <p className="text-sm font-semibold text-neutral-800 mb-3">Download the Bunzo app</p>
+              <AppDownloadButtons variant="light" />
+            </div>
             <a
               href="mailto:support@bunzodelivery.com"
               className="inline-block bg-neutral-900 text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-black transition-colors"
@@ -58,18 +63,11 @@ export default function HomePage() {
         <div className="hidden md:flex items-center justify-center w-1/2 bg-[#1A1A1A] px-8 py-16">
           <div className="text-center">
             <div className="text-8xl mb-6 select-none">🛵</div>
-            <p className="text-brand-yellow font-bold text-xl mb-1">App Coming Soon</p>
+            <p className="text-brand-yellow font-bold text-xl mb-1">Download the Bunzo app</p>
             <p className="text-neutral-400 text-sm max-w-xs">
-              Available on the App Store and Google Play.
+              Order groceries in minutes — available on iOS and Android.
             </p>
-            <div className="flex justify-center gap-3 mt-6">
-              <span className="border border-neutral-600 text-neutral-400 text-xs px-4 py-2 rounded-lg">
-                App Store
-              </span>
-              <span className="border border-neutral-600 text-neutral-400 text-xs px-4 py-2 rounded-lg">
-                Google Play
-              </span>
-            </div>
+            <AppDownloadButtons variant="dark" className="mt-6" />
           </div>
         </div>
 
