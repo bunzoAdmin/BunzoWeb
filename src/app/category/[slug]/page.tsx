@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const cat = categories.find((c) => c.slug === slug);
   if (!cat) return { title: 'Category not found' };
   return {
-    title: `${cat.name} — Delivered in 10 minutes`,
-    description: `Buy ${cat.name.toLowerCase()} online in Lusaka with 10-minute Bunzo delivery.`
+    title: `${cat.name} — Delivered in 15 minutes`,
+    description: `Buy ${cat.name.toLowerCase()} online in Lusaka with 15-minute Bunzo delivery.`
   };
 }
 

@@ -51,7 +51,7 @@ export default function TermsPage() {
 
       <Section title="4. Delivery">
         <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-700">
-          <li>We aim to deliver within 10 minutes. Estimated times are indicative and may vary due to traffic, weather, or demand.</li>
+          <li>We aim to deliver within 15 minutes. Estimated times are indicative and may vary due to traffic, weather, or demand.</li>
           <li>Delivery is currently available within designated zones in Lusaka. Coverage zones are shown in the app.</li>
           <li>You must be available to receive the order at the address provided. If no one is available, the rider may leave items in a safe location at your risk or return them to store.</li>
           <li>Risk in the goods passes to you upon delivery.</li>

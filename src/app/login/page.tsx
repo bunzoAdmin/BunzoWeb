@@ -55,7 +55,7 @@ function LoginForm() {
       </h1>
       <p className="text-neutral-500 text-sm mb-5">
         {step === 'phone'
-          ? 'Get groceries delivered in 10 minutes'
+          ? 'Get groceries delivered in 15 minutes'
           : `We sent a code to ${phone}`}
       </p>
 

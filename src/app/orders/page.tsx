@@ -28,7 +28,7 @@ function OrdersList() {
     <>
       {placedId && (
         <div className="bg-brand-green-light border border-brand-green text-brand-green p-4 rounded-lg mb-6">
-          🎉 Order <strong>{placedId}</strong> placed successfully! It will arrive in ~10 minutes.
+          🎉 Order <strong>{placedId}</strong> placed successfully! It will arrive in ~15 minutes.
         </div>
       )}
 

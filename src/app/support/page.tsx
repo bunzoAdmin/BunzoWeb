@@ -91,7 +91,7 @@ export default function SupportPage() {
 const faqs = [
   {
     q: 'How long does delivery take?',
-    a: 'We target 10-minute delivery across Lusaka from our nearest dark store. Actual times may vary based on distance and demand.'
+    a: 'We target 15-minute delivery across Lusaka from our nearest dark store. Actual times may vary based on distance and demand.'
   },
   {
     q: 'Which areas do you deliver to?',

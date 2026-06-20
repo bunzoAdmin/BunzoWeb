@@ -8,23 +8,23 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bunzo — Groceries delivered in 10 minutes in Lusaka',
+    default: 'Bunzo — Groceries delivered in 15 minutes in Lusaka',
     template: '%s | Bunzo'
   },
   description:
-    'Bunzo delivers fresh groceries, daily essentials and household items to your doorstep across Lusaka in just 10 minutes. Pay with Airtel Money, MTN Mobile Money or Cash on Delivery.',
+    'Bunzo delivers fresh groceries, daily essentials and household items to your doorstep across Lusaka in just 15 minutes. Pay with Airtel Money, MTN Mobile Money or Cash on Delivery.',
   keywords: [
     'Bunzo',
     'grocery delivery Zambia',
     'Lusaka grocery delivery',
-    '10 minute delivery',
+    '15 minute delivery',
     'Airtel Money grocery',
     'MTN MoMo grocery',
     'online groceries Zambia'
   ],
   openGraph: {
-    title: 'Bunzo — Groceries delivered in 10 minutes',
-    description: 'Fresh groceries delivered across Lusaka in 10 minutes.',
+    title: 'Bunzo — Groceries delivered in 15 minutes',
+    description: 'Fresh groceries delivered across Lusaka in 15 minutes.',
     type: 'website',
     locale: 'en_ZM',
     siteName: 'Bunzo'

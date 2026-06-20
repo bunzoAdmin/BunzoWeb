@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const subcat = cat?.subcategories.find((s) => s.slug === sub);
   if (!cat || !subcat) return { title: 'Page not found' };
   return {
-    title: `${subcat.name} — ${cat.name} delivered in 10 minutes`,
-    description: `Buy ${subcat.name.toLowerCase()} online in Lusaka. 10-minute Bunzo delivery on ${cat.name.toLowerCase()}.`
+    title: `${subcat.name} — ${cat.name} delivered in 15 minutes`,
+    description: `Buy ${subcat.name.toLowerCase()} online in Lusaka. 15-minute Bunzo delivery on ${cat.name.toLowerCase()}.`
   };
 }
 
@@ -68,7 +68,7 @@ export default async function SubcategoryPage({ params }: Params) {
             {subcat.name}
           </h1>
           <p className="text-sm text-neutral-500 mb-4">
-            {items.length} item{items.length === 1 ? '' : 's'} · Delivered in 10 minutes
+            {items.length} item{items.length === 1 ? '' : 's'} · Delivered in 15 minutes
           </p>
 
           {items.length === 0 ? (

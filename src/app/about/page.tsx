@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About Bunzo',
   description:
-    'Bunzo is Zambia\'s 10-minute grocery delivery service. Learn about our mission, story and how we deliver fresh groceries across Lusaka.'
+    'Bunzo is Zambia\'s 15-minute grocery delivery service. Learn about our mission, story and how we deliver fresh groceries across Lusaka.'
 };
 
 export default function AboutPage() {
@@ -11,12 +11,12 @@ export default function AboutPage() {
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-10">
       <h1 className="text-4xl font-extrabold mb-2">About Bunzo</h1>
       <p className="text-neutral-600 mb-10">
-        Zambia&apos;s fastest grocery delivery service — fresh essentials at your doorstep in 10 minutes.
+        Zambia&apos;s fastest grocery delivery service — fresh essentials at your doorstep in 15 minutes.
       </p>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mb-12">
         {[
-          { e: '⚡', t: '10-Minute Delivery', d: 'A network of dark stores across Lusaka.' },
+          { e: '⚡', t: '15-Minute Delivery', d: 'A network of dark stores across Lusaka.' },
           { e: '🥬', t: 'Fresh & Quality', d: 'Sourced from trusted local vendors daily.' },
           { e: '💸', t: 'Mobile Money', d: 'Pay with Airtel Money, MTN MoMo or cash.' },
           { e: '📱', t: 'Simple Ordering', d: 'A clean, fast app and website.' }
@@ -42,7 +42,7 @@ export default function AboutPage() {
       <section id="mission" className="bg-brand-dark text-white p-8 rounded-xl mb-10">
         <h2 className="text-2xl font-bold text-brand-yellow mb-2">Our Mission</h2>
         <p>
-          To bring essential goods to every doorstep across Zambia within 10 minutes — built on
+          To bring essential goods to every doorstep across Zambia within 15 minutes — built on
           speed, freshness and trust.
         </p>
       </section>

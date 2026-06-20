@@ -8,7 +8,7 @@ export function Hero() {
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Groceries delivered in{' '}
             <span className="underline decoration-brand-green decoration-4">
-              10 minutes
+              15 minutes
             </span>
           </h1>
           <p className="mt-4 text-base md:text-lg text-neutral-800">

@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Bunzo — Grocery Delivery App | Bunzo Technologies Limited',
   description:
-    'Bunzo is a 10-minute grocery delivery service in Zambia, operated by Bunzo Technologies Limited. Download the app to get fresh groceries delivered to your doorstep in Lusaka.'
+    'Bunzo is a 15-minute grocery delivery service in Zambia, operated by Bunzo Technologies Limited. Download the app to get fresh groceries delivered to your doorstep in Lusaka.'
 };
 
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900 leading-tight mb-4">
               Groceries delivered<br />in{' '}
               <span className="relative inline-block">
-                10 minutes
+                15 minutes
                 <span className="absolute left-0 -bottom-1 w-full h-1 bg-brand-dark rounded-full" />
               </span>
             </h1>
@@ -80,7 +80,7 @@ export default function HomePage() {
 
         <div className="grid sm:grid-cols-3 gap-6 mb-16">
           {[
-            { icon: '⚡', title: '10-Minute Delivery', body: 'Order from our nearest dark store and receive your groceries in minutes.' },
+            { icon: '⚡', title: '15-Minute Delivery', body: 'Order from our nearest dark store and receive your groceries in minutes.' },
             { icon: '🛒', title: 'Wide Selection', body: 'Fresh produce, dairy, household essentials and more — all in one app.' },
             { icon: '💸', title: 'Easy Payments', body: 'Pay with Airtel Money, MTN Mobile Money, or Cash on Delivery.' }
           ].map((f) => (

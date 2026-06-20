@@ -66,7 +66,7 @@ export default async function ProductPage({ params }: Params) {
         <div className="mt-8 border-t border-neutral-200 pt-6">
           <h3 className="font-semibold mb-2">Why shop on Bunzo?</h3>
           <ul className="text-sm text-neutral-600 space-y-1">
-            <li>⚡ Delivered to your door in 10 minutes</li>
+            <li>⚡ Delivered to your door in 15 minutes</li>
             <li>🛡️ Quality assured by our team</li>
             <li>💸 Pay with Airtel Money, MTN MoMo or cash</li>
             <li>↩️ Easy returns on damaged items</li>
